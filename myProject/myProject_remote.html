@@ -24,6 +24,11 @@
 
 <body>
 
+	<!-- SERVICE DOCK -->
+	<div id="servicedock">
+		<service-airtable id="service_airtable" tablename="myProject"></service-airtable>
+	</div>
+
 	<img src='img/Pacman_Pinball.png' alt='Pacman Pinball Picture' class='center'>
 
 	<p>Welcome to Pacman Pinball! You are able to control the triangle and rectangle shapes.<p>
@@ -31,35 +36,23 @@
 	<p>Don't panic if there is lag, it's to make sure you can see the game in action when you are switching between the website and Zoom.<p>
 	<p>Once you are ready to hit your shot, choose how hard you want to hit it and it will shoot!<p>
 
-	<!-- SERVICE DOCK -->
-	<div id="servicedock">
-		<service-airtable id="service_airtable" tablename="myProject"></service-airtable>
-	</div>
-
   <h1>Controls</h1>
 
 
 	<!-- CREATE YOUR PROJECT HERE -->
-</div>
 
   <p>Control the rectangle</p>
 	<button cloud_action='update' cloud_name='command' cloud_value='Left'><img src='./img/rectangle_right.png' alt='Rectangle Right'></button>
 	<button cloud_action='update' cloud_name='command' cloud_value='Right'><img src='./img/rectangle_left.png' alt='Rectangle Left'></button></p>
 
-</div>
-
   <p>Control the triangle</p>
 		<button cloud_action='update' cloud_name='command' cloud_value='Left.'><img src='./img/triangle_right.png' alt='Triangle Right'></button>
 	<button cloud_action='update' cloud_name='command' cloud_value='Right.'><img src='./img/triangle_left.png' alt='Triangle Left'></button></p>
-
-</div>
 
   <p>How hard do you want to hit the ball?</p>
 	<button cloud_action='update' cloud_name='command' cloud_value='Soft Hit'><img src='./img/low_power.png' alt='Low Power'></button>
 	<button cloud_action='update' cloud_name='command' cloud_value='Medium Hit'><img src='./img/medium_power.png' alt='Medium Power'></button>
 	<button cloud_action='update' cloud_name='command' cloud_value='Hard Hit'><img src='./img/full_power.png' alt='Full Power'></button></p>
-
-		</div>
 
 <!--
 	<p>Windmill Control</p>
@@ -67,8 +60,6 @@
 		<button cloud_action='update' cloud_name='command'>Fast Windmill</button>
 
 -->
-
-		</div>
 
 	<hr>
 
