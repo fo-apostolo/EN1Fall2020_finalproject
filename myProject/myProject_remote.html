@@ -6,13 +6,6 @@
 	  <link rel="stylesheet" href="../src/style.css" />
 	</head>
 
-	<img src='img/Pacman_Pinball.png' alt='Pacman Pinball Picture' width='349' height='263' class='center'>
-
-	<p>Welcome to Pacman Pinball! You are able to control the triangle and rectangle shapes.<p>
-	<p>The goal is to get the pacman to the cherries!<p>
-	<p>Don't panic if there is lag, it's to make sure you can see the game in action when you are switching between the website and Zoom.<p>
-	<p>Once you are ready to hit your shot, choose how hard you want to hit it and it will shoot!<p>
-
 	<style>
 	body{
 		background-color: black;
@@ -21,9 +14,22 @@
 	}
 	h1 {text-align: center;}
 	p {text-align: center;}
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 	</style>
 
 <body>
+
+	<img src='img/Pacman_Pinball.png' alt='Pacman Pinball Picture' width='349' height='263' class='center'>
+
+	<p>Welcome to Pacman Pinball! You are able to control the triangle and rectangle shapes.<p>
+	<p>The goal is to get the pacman to the cherries!<p>
+	<p>Don't panic if there is lag, it's to make sure you can see the game in action when you are switching between the website and Zoom.<p>
+	<p>Once you are ready to hit your shot, choose how hard you want to hit it and it will shoot!<p>
 
 	<!-- SERVICE DOCK -->
 	<div id="servicedock">
@@ -37,13 +43,13 @@
 </div>
 
   <p>Control the rectangle</p>
-	<button cloud_action='update' cloud_name='command' cloud_value='Left'><img scr='./img/rectangle_left.png' alt='Rectangle Left'></button>
-	<button cloud_action='update' cloud_name='command' cloud_value='Right'><img scr='./img/rectangle_right.png' alt='Rectangle Right'></button></p>
+	<button cloud_action='update' cloud_name='command' cloud_value='Left'><img src='./img/rectangle_left.png' alt='Rectangle Left'></button>
+	<button cloud_action='update' cloud_name='command' cloud_value='Right'><img src='./img/rectangle_right.png' alt='Rectangle Right'></button></p>
 
 </div>
 
   <p>Control the triangle</p>
-	<button cloud_action='update' cloud_name='command' cloud_value='Left.'><img scr='./img/triangle_left.png' alt='Triangle Left'></button>
+	<button cloud_action='update' cloud_name='command' cloud_value='Left.'><img src='./img/triangle_left.png' alt='Triangle Left'></button>
 	<button cloud_action='update' cloud_name='command' cloud_value='Right.'><img scr='./img/triangle_right.png' alt='Triangle Right'></button></p>
 
 </div>
